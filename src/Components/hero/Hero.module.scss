@@ -1,0 +1,94 @@
+@import '../../styles/contants.scss';
+
+.wrapper{
+    overflow: hidden;
+
+    .container{
+        position: relative;
+        z-index: 1;
+
+        .upperElements{
+            // @media (max-width: $sm) {
+            //     justify-content: center;
+            //     text-align: center;
+            //     gap: 2rem;
+            // }
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+        
+        .person{
+            // @media (screen-width: $sm), (screen-width:$md) {
+            //     background-size: 20rem;
+            //     left: 0;
+            //     position: relative;
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: center;
+            //     background-position: bottom;
+            // }
+
+            // img{
+            //     @media (screen-width:$sm) {
+            //         width: 23rem;
+            //     }
+            //     margin-bottom: -5px;
+            // }
+
+            position: absolute;
+            margin: auto;
+            bottom: -2rem;
+            background-image: url('../../../public/splash.png');
+            background-repeat: no-repeat;
+            left:33%;
+            background-size: 23rem;
+        }
+
+        .email{
+            // @media (screen-width:$sm), (screen-width:$md) {
+            //     position: relative;
+            //     display: none;
+            // }
+            position: absolute;
+            top: 50%;
+            color: orange;
+            left: 0;
+        }
+
+        .lowerElements{
+            // @media (max-width: $sm), (max-width: $md) {
+            //     margin-top: 4rem;
+            //     gap: 2rem;
+            //     justify-content: center;
+            // }
+            margin-top: 12rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .experience{
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+                >:nth-child(2){
+                    line-height: 25px;
+                }
+            }
+
+            .certificate{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                img{
+                    margin-bottom: 1rem;
+                    width: 3.5rem;
+                }
+            }
+
+        }
+    }
+}
